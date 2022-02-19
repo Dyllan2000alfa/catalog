@@ -1,5 +1,5 @@
 image:
-  repository: tccr.io/netbootxyz/netbootxyz
+  repository: ghcr.io/netbootxyz/netbootxyz
   pullPolicy: IfNotPresent
   tag: latest
 

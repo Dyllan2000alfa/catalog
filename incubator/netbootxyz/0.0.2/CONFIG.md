@@ -1,6 +1,6 @@
 # netbootxyz
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Netbootxyz App for TrueNAS SCALE
 
@@ -30,7 +30,7 @@ Kubernetes: `>=1.16.0-0`
 |-----|------|---------|-------------|
 | env | object | `{}` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"tccr.io/netbootxyz/netbootxyz"` |  |
+| image.repository | string | `"ghcr.io/netbootxyz/netbootxyz"` |  |
 | image.tag | string | `"latest"` |  |
 | persistence.assets.enabled | bool | `true` |  |
 | persistence.assets.mountPath | string | `"/assets"` |  |

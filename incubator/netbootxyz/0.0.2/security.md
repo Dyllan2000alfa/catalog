@@ -113,4 +113,22 @@ hide:
 | ssl_client         |    CVE-2021-42375   |   MEDIUM  |  1.33.1-r3 | 1.33.1-r5 | <details><summary>Expand...</summary><a href="https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/">https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/</a><br><a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6T2TURBYYJGBMQTTN2DSOAIQGP7WCPGV/</a><br><a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UQXGOGWBIYWOIVXJVRKHZR34UMEHQBXS/</a><br><a href="https://security.netapp.com/advisory/ntap-20211223-0002/">https://security.netapp.com/advisory/ntap-20211223-0002/</a><br></details>  |
 
 
+#### Container: tccr.io/netbootxyz/netbootxyz:latest (alpine 3.15.0)
+    
+
+**alpine**
+
+      
+| Package         |    Vulnerability   |   Severity  |  Installed Version | Fixed Version |                   Links                   |
+|:----------------|:------------------:|:-----------:|:------------------:|:-------------:|-----------------------------------------|
+| libblkid         |    CVE-2022-0563   |   MEDIUM  |  2.37.3-r0 | 2.37.4-r0 | <details><summary>Expand...</summary><a href="https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u">https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u</a><br></details>  |
+| libmount         |    CVE-2022-0563   |   MEDIUM  |  2.37.3-r0 | 2.37.4-r0 | <details><summary>Expand...</summary><a href="https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u">https://lore.kernel.org/util-linux/20220214110609.msiwlm457ngoic6w@ws.net.home/T/#u</a><br></details>  |
+
+**node-pkg**
+
+      
+| No Vulnerabilities found         |
+|:---------------------------------|
+
+      
 
