@@ -1,0 +1,29 @@
+apiVersion: v2
+kubeVersion: ">=1.16.0-0"
+name: netbootxyz
+version: 0.0.1
+appVersion: "latest"
+description: Netbootxyz App for TrueNAS SCALE
+type: application
+deprecated: false
+home: https://github.com/truecharts/apps/tree/master/charts/stable/netbootxyz
+icon: https://raw.githubusercontent.com/truecharts/apps/master/stable/netbootxyz/icon.png?raw=true
+keywords:
+  - CHARTNAME
+sources:
+  - https://github.com/truecharts/apps/tree/master/charts/netbootxyz
+dependencies:
+- name: common
+  repository: https://truecharts.org
+  version: 8.15.4
+    # condition:
+maintainers:
+- email: info@truecharts.org
+  name: TrueCharts
+  url: https://truecharts.org
+annotations:
+  truecharts.org/catagories: |
+    - media
+    - test
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U

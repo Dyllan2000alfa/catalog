@@ -1,0 +1,31 @@
+image:
+  repository: tccr.io/netbootxyz/netbootxyz
+  pullPolicy: IfNotPresent
+  tag: latest
+
+env: {}
+
+service:
+  main:
+    ports:
+      main:
+        targetPort: 3000
+        port: 10161
+  tftp:
+    ports:
+      tftp:
+        targetport: 69
+        port: 69
+  assets:
+    ports:
+      assets:
+        targetport: 80
+        port: 10162
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  assets:
+    enabled: true
+    mountPath: "/assets"
