@@ -1,6 +1,6 @@
 # netbootxyz
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.6](https://img.shields.io/badge/AppVersion-0.6.6-informational?style=flat-square)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.6](https://img.shields.io/badge/AppVersion-0.6.6-informational?style=flat-square)
 
 Netbootxyz App for TrueNAS SCALE
 
@@ -40,10 +40,14 @@ Kubernetes: `>=1.16.0-0`
 | podSecurityContext.runAsUser | int | `0` |  |
 | securityContext.readOnlyRootFilesystem | bool | `false` |  |
 | securityContext.runAsNonRoot | bool | `false` |  |
+| service.assets.enabled | bool | `true` |  |
+| service.assets.ports.assets.enabled | bool | `true` |  |
 | service.assets.ports.assets.port | int | `10162` |  |
-| service.assets.ports.assets.targetport | int | `8080` |  |
+| service.assets.ports.assets.targetport | int | `80` |  |
 | service.main.ports.main.port | int | `10161` |  |
 | service.main.ports.main.targetPort | int | `3000` |  |
+| service.tftp.enabled | bool | `true` |  |
+| service.tftp.ports.tftp.enabled | bool | `true` |  |
 | service.tftp.ports.tftp.port | int | `69` |  |
 | service.tftp.ports.tftp.protocol | string | `"UDP"` |  |
 | service.tftp.ports.tftp.targetport | int | `69` |  |

@@ -20,15 +20,19 @@ service:
         targetPort: 3000
         port: 10161
   tftp:
+    enabled: true
     ports:
       tftp:
+        enabled: true
         targetport: 69
         port: 69
         protocol: UDP
   assets:
+    enabled: true
     ports:
       assets:
-        targetport: 8080
+        enabled: true
+        targetport: 80
         port: 10162
 
 persistence:

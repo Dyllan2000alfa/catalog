@@ -429,7 +429,7 @@ questions:
                                     default: 3000
         - variable: tftp
           label: "TFTP Service"
-          description: ""
+          description: "The TFTP Service"
           schema:
             type: dict
             attrs:
@@ -558,7 +558,7 @@ questions:
                                     default: 69
         - variable: assets
           label: "Assets Service"
-          description: ""
+          description: "Asset Serice used to host assets"
           schema:
             type: dict
             attrs:
