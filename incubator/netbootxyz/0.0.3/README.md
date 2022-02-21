@@ -1,6 +1,6 @@
 # netbootxyz
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.6](https://img.shields.io/badge/AppVersion-0.6.6-informational?style=flat-square)
 
 Netbootxyz App for TrueNAS SCALE
 
@@ -31,16 +31,21 @@ Kubernetes: `>=1.16.0-0`
 | env | object | `{}` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"ghcr.io/netbootxyz/netbootxyz"` |  |
-| image.tag | string | `"latest"` |  |
+| image.tag | string | `"0.6.6-nbxyz10@sha256:4fff0c570ba97c1640ab86e61111920505389c0f42e2645b0ff4d4b3e742e594"` |  |
 | persistence.assets.enabled | bool | `true` |  |
 | persistence.assets.mountPath | string | `"/assets"` |  |
 | persistence.config.enabled | bool | `true` |  |
 | persistence.config.mountPath | string | `"/config"` |  |
+| podSecurityContext.runAsGroup | int | `0` |  |
+| podSecurityContext.runAsUser | int | `0` |  |
+| securityContext.readOnlyRootFilesystem | bool | `false` |  |
+| securityContext.runAsNonRoot | bool | `false` |  |
 | service.assets.ports.assets.port | int | `10162` |  |
-| service.assets.ports.assets.targetport | int | `80` |  |
+| service.assets.ports.assets.targetport | int | `8080` |  |
 | service.main.ports.main.port | int | `10161` |  |
 | service.main.ports.main.targetPort | int | `3000` |  |
 | service.tftp.ports.tftp.port | int | `69` |  |
+| service.tftp.ports.tftp.protocol | string | `"UDP"` |  |
 | service.tftp.ports.tftp.targetport | int | `69` |  |
 
 ----------------------------------------------
