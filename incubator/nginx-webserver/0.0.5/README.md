@@ -1,6 +1,6 @@
 # nginx-webserver
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.20.2-r0](https://img.shields.io/badge/AppVersion-1.20.2--r0-informational?style=flat-square)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.20.2-r0](https://img.shields.io/badge/AppVersion-1.20.2--r0-informational?style=flat-square)
 
 Nginx Webserver App for TrueNAS SCALE
 
@@ -37,6 +37,7 @@ Kubernetes: `>=1.16.0-0`
 | persistence.config.mountPath | string | `"/config"` |  |
 | persistence.html.enabled | bool | `true` |  |
 | persistence.html.mountPath | string | `"/config/www"` |  |
+| persistence.varrun.enabled | bool | `true` |  |
 | service.main.ports.main.port | int | `10162` |  |
 | service.main.ports.main.targetPort | int | `80` |  |
 

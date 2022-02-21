@@ -21,3 +21,5 @@ persistence:
   html:
     enabled: true
     mountPath: "/config/www"
+  varrun:
+    enabled: true
