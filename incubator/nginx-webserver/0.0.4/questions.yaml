@@ -190,7 +190,12 @@ questions:
           schema:
             type: string
             default: "002"
-
+        - variable: PUID
+          label: "PUID"
+          description: "Sets the PUID env var for LinuxServer.io (compatible) containers"
+          schema:
+            type: int
+            default: 568
   - variable: envList
     label: "Image environment"
     group: "Container Configuration"
@@ -386,7 +391,7 @@ questions:
                             description: "This port exposes the container port on the service"
                             schema:
                               type: int
-                              default: 80
+                              default: 10162
                               required: true
                           - variable: advanced
                             label: "Show Advanced settings"
@@ -426,7 +431,7 @@ questions:
                                   description: "The internal(!) port on the container the Application runs on"
                                   schema:
                                     type: int
-                                    default: 80
+                                    default: 8080
 
   - variable: serviceexpert
     group: "Networking and Services"
@@ -772,7 +777,7 @@ questions:
                 description: "Path inside the container the storage is mounted"
                 schema:
                   type: string
-                  default: "/config"
+                  default: "/etc/nginx"
                   hidden: true
                   valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
@@ -884,10 +889,9 @@ questions:
                                   schema:
                                     type: string
         - variable: html
-          label: "App HTML Location"
-          description: "Stores the Application Configuration."
+          label: "HTML Storage"
+          description: "Stores public HTML files."
           schema:
-            additional_attrs: true
             type: dict
             attrs:
               - variable: enabled
@@ -944,6 +948,14 @@ questions:
                 schema:
                   show_if: [["type", "=", "hostPath"]]
                   type: hostpath
+              - variable: mountPath
+                label: "mountPath"
+                description: "Path inside the container the storage is mounted"
+                schema:
+                  type: string
+                  default: "/usr/share/nginx/html"
+                  hidden: true
+                  valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
                 label: "EmptyDir Medium"
                 schema:
