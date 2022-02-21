@@ -777,7 +777,7 @@ questions:
                 description: "Path inside the container the storage is mounted"
                 schema:
                   type: string
-                  default: "/etc/nginx"
+                  default: "/config"
                   hidden: true
                   valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
@@ -953,7 +953,7 @@ questions:
                 description: "Path inside the container the storage is mounted"
                 schema:
                   type: string
-                  default: "/usr/share/nginx/html"
+                  default: "/config/html"
                   hidden: true
                   valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
