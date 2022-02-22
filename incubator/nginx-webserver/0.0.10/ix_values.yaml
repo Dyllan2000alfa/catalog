@@ -1,7 +1,7 @@
 image:
-  repository: dyllan2000alfa/nginx
+  repository: lscr.io/linuxserver/nginx
   pullPolicy: IfNotPresent
-  tag: 1.20.2-alpine
+  tag: 1.20.2-r0-ls166
 
 env:
   PUID: 568
@@ -11,13 +11,15 @@ service:
   main:
     ports:
       main:
-        targetPort: 8080
+        targetPort: 80
         port: 10162
 
 persistence:
   config:
     enabled: true
-    mountPath: "/etc/nginx/"
-  html:
+    mountPath: "/config"
+  www:
     enabled: true
-    mountPath: "/usr/share/nginx/html"
+    mountPath: "/config/www"
+  varrun:
+    enabled: true
