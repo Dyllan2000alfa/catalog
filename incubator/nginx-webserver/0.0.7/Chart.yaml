@@ -1,0 +1,28 @@
+apiVersion: v2
+kubeVersion: ">=1.16.0-0"
+name: nginx-webserver
+version: 0.0.7
+appVersion: "1.20.2-alp"
+description: Nginx Webserver App for TrueNAS SCALE
+type: application
+deprecated: false
+home: https://github.com/truecharts/apps/tree/master/charts/stable/nginx-webserver
+icon: https://github.com/Dyllan2000alfa/apps/raw/nginx-webserver/charts/incubator/nginx-webserver/icon.png
+keywords:
+  - nginx-webserver
+sources:
+  - https://github.com/truecharts/apps/tree/master/charts/nginx-webserver
+dependencies:
+- name: common
+  repository: https://truecharts.org
+  version: 8.14.4
+maintainers:
+- email: info@truecharts.org
+  name: TrueCharts
+  url: https://truecharts.org
+annotations:
+  truecharts.org/catagories: |
+    - media
+    - test
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U
