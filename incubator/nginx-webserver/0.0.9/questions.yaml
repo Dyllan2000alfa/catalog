@@ -723,7 +723,7 @@ questions:
                 schema:
                   type: boolean
                   default: true
-                  hidden: true
+                  hidden: false
               - variable: type
                 label: "Type of Storage"
                 description: "Sets the persistence type, Anything other than PVC could break rollback!"
@@ -778,7 +778,7 @@ questions:
                 schema:
                   type: string
                   default: "/etc/nginx/"
-                  hidden: true
+                  hidden: false
                   valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
                 label: "EmptyDir Medium"
@@ -899,7 +899,7 @@ questions:
                 schema:
                   type: boolean
                   default: true
-                  hidden: true
+                  hidden: false
               - variable: type
                 label: "Type of Storage"
                 description: "Sets the persistence type, Anything other than PVC could break rollback!"
@@ -953,8 +953,8 @@ questions:
                 description: "Path inside the container the storage is mounted"
                 schema:
                   type: string
-                  default: "/usr/share/nginx/htm"
-                  hidden: true
+                  default: "/usr/share/nginx/html"
+                  hidden: false
                   valid_chars: '^\/([a-zA-Z0-9._-]+(\s?[a-zA-Z0-9._-]+|\/?))+$'
               - variable: medium
                 label: "EmptyDir Medium"
@@ -1082,7 +1082,7 @@ questions:
                 schema:
                   type: boolean
                   default: true
-                  hidden: true
+                  hidden: false
               - variable: name
                 label: "Name (optional)"
                 description: "Not required, please set to config when mounting /config or temp when mounting /tmp"
