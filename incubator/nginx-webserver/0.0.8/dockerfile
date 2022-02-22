@@ -1,0 +1,4 @@
+FROM nginxinc/nginx-unprivileged:1.20.2-alpine-amd64
+
+ARG UID=568
+ARG GID=568

@@ -1,6 +1,6 @@
 # nginx-webserver
 
-![Version: 0.0.7](https://img.shields.io/badge/Version-0.0.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.20.2-alp](https://img.shields.io/badge/AppVersion-1.20.2--alp-informational?style=flat-square)
+![Version: 0.0.8](https://img.shields.io/badge/Version-0.0.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.20.2](https://img.shields.io/badge/AppVersion-1.20.2-informational?style=flat-square)
 
 Nginx Webserver App for TrueNAS SCALE
 
@@ -31,12 +31,12 @@ Kubernetes: `>=1.16.0-0`
 | env.PGID | string | `"{{ .Values.env.PUID }}"` |  |
 | env.PUID | int | `568` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"nginxinc/nginx-unprivileged"` |  |
-| image.tag | string | `"1.20.2-alpine-amd64"` |  |
+| image.repository | string | `"dyllan2000alfa/nginx"` |  |
+| image.tag | string | `"1.20.2-alpine"` |  |
 | persistence.config.enabled | bool | `true` |  |
 | persistence.config.mountPath | string | `"/etc/nginx/"` |  |
 | persistence.html.enabled | bool | `true` |  |
-| persistence.html.mountPath | string | `"/usr/share/nginx/htm"` |  |
+| persistence.html.mountPath | string | `"/usr/share/nginx/html"` |  |
 | service.main.ports.main.port | int | `10162` |  |
 | service.main.ports.main.targetPort | int | `8080` |  |
 

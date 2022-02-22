@@ -1,7 +1,7 @@
 image:
-  repository: nginxinc/nginx-unprivileged
+  repository: dyllan2000alfa/nginx
   pullPolicy: IfNotPresent
-  tag: 1.20.2-alpine-amd64
+  tag: 1.20.2-alpine
 
 env:
   PUID: 568
@@ -20,4 +20,4 @@ persistence:
     mountPath: "/etc/nginx/"
   html:
     enabled: true
-    mountPath: "/usr/share/nginx/htm"
+    mountPath: "/usr/share/nginx/html"
